@@ -2,24 +2,11 @@
 OKGREEN='\033[92m'; RESET='\e[0m'
 echo -e "$OKGREEN ++ --------- Installing Dependencies --------- ++ $RESET"
 
-printf '%b\n\n'; echo -e "$OKGREEN Backup Files $RESET"
-mv /etc/apt/sources.list /etc/apt/sources.list.bak
-cp ~/.bashrc ~/.bashrc.bak
-cp ~/.zshrc ~/.zshrc.bak
-cp ~/.bash_profile ~/.bash_profile.bak
-
-printf '%b\n\n'; echo -e "$OKGREEN Step1 : Adding Kali Repo $RESET"
-cp /etc/apt/sources.list /etc/apt/sources.list.bak; rm /etc/apt/sources.list;
-echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
-echo "deb-src http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
-wget https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2020.2_all.deb -O /tmp/kali-archive-keyring_2020.2_all.deb
-apt install /tmp/kali-archive-keyring_2020.2_all.deb -y
-
 # ----------------------------------------------------------------------------------------------------------------------------------------- #
 printf '%b\n\n'; echo -e "$OKGREEN Step2 : Repo update + Installing Package $RESET"
 apt update -y; DEBIAN_FRONTEND=noninteractive apt remove -y libgcc-9-dev; DEBIAN_FRONTEND=noninteractive apt install -y libc6-dev; clear;
-apt install -y npm git parallel jq expect libpq-dev nmap curl wget chromium zip; 
-apt install -y python python3 python3-pip python3-dev build-essential; 
+apt install -y npm git parallel jq expect libpq-dev nmap curl wget chromium zip;
+apt install -y python python3 python3-pip python3-dev build-essential libpcap0.8-dev; 
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && python get-pip.py;
 pip install --upgrade pip; pip3 install --upgrade pip;
 
@@ -96,74 +83,74 @@ pip3 install dnsgen
 printf '%b\n\n'; echo -e "$OKGREEN Installing Go tools $RESET"
 # -------------------------------------------------------------- #
 # cf-check
-go get -u github.com/dwisiswant0/cf-check
+go install github.com/dwisiswant0/cf-check
 
 # comb
-go get -u github.com/tomnomnom/comb
+go install github.com/tomnomnom/comb
 
 # CORS-Scanner
-go get -u github.com/Tanmay-N/CORS-Scanner
+go install github.com/Tanmay-N/CORS-Scanner
 
 # dalfox
-GO111MODULE=on go get -v github.com/hahwul/dalfox/v2
+GO111MODULE=on go install -v github.com/hahwul/dalfox/v2
 
 # dnsprobe
-GO111MODULE=on go get -v github.com/projectdiscovery/dnsprobe
+GO111MODULE=on go install -v github.com/projectdiscovery/dnsprobe
 
 # ffuf
-go get -u github.com/ffuf/ffuf
+go install github.com/ffuf/ffuf
 
 # gowitness
-go get -u github.com/sensepost/gowitness
+go install github.com/sensepost/gowitness
 
 # gron
-go get -u github.com/tomnomnom/gron
+go install github.com/tomnomnom/gron
 
 # gau
-GO111MODULE=on go get -u -v github.com/lc/gau
+GO111MODULE=on go install -v github.com/lc/gau
 
 # gospider
-go get -u github.com/jaeles-project/gospider
+go install github.com/jaeles-project/gospider
 
 # gf
-go get -u github.com/tomnomnom/gf
+go install github.com/tomnomnom/gf
 wget https://raw.githubusercontent.com/tomnomnom/gf/master/gf-completion.bash
 source gf-completion.bash; rm gf-completion.bash;
 cp -r /root/resource/gf ~/.gf
 
 # hakcheckurl
-go get github.com/hakluke/hakcheckurl
+go install github.com/hakluke/hakcheckurl
 
 # httpx
 wget https://github.com/projectdiscovery/httpx/releases/download/v0.0.6/httpx_0.0.6_linux_386.tar.gz
 tar -xvf httpx_0.0.6_linux_386.tar.gz; mv httpx /usr/bin/httpx
 
 # naabu
-GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
+GO111MODULE=on go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu
 
 # nuclei
-GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+GO111MODULE=on go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 
 # meg
-go get -u github.com/tomnomnom/meg
+go install github.com/tomnomnom/meg
 
 # subjack
-go get github.com/haccer/subjack
+go install github.com/haccer/subjack
 
 # s3enum
-go get github.com/koenrh/s3enum
+go install github.com/koenrh/s3enum
 
 # secretz
-go get -u github.com/lc/secretz
+go install github.com/lc/secretz
 
 # unfurl
-go get -u github.com/tomnomnom/unfurl
+go install github.com/tomnomnom/unfurl
 
 # webanalyze
-go get -v -u github.com/rverton/webanalyze/cmd/webanalyze
+go install github.com/rverton/webanalyze/cmd/webanalyze
 
 # kxss
-go get -u github.com/tomnomnom/hacks/kxss
+go install github.com/tomnomnom/hacks/kxss
 
 
 # -------------------------------------------------------------- #
@@ -183,10 +170,10 @@ npm install -g retire
 printf '%b\n\n'; echo -e "$OKGREEN Step7 : Installing Other tools $RESET"
 
 # hakcheckurl
-go get github.com/hakluke/hakrevdns
+go install github.com/hakluke/hakrevdns
 
 # shuffledns
-GO111MODULE=on go get -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
+GO111MODULE=on go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
 
 # gitGrabber
 git clone https://github.com/hisxo/gitGraber.git
