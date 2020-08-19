@@ -1,0 +1,15 @@
+{
+    "flags": "-HnriE",
+    "patterns": [
+		".*[auth].*",
+		".*[access].*",
+		".*[credential].*",
+		".*[token].*",
+		".*[key].*",
+		".*[secret].*",
+		".*[user].*",
+		".*[password].*", 
+		".*[passwd].*" 
+	]
+}
+

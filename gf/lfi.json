@@ -1,0 +1,16 @@
+{
+    "flags": "-HanrE",
+     "patterns": [
+        "file=",
+        "document=",
+        "folder=",
+        "root=",
+        "path=",
+        "pg=",
+        "style=",
+        "pdf=",
+        "template=",
+        "php_path=",
+        "doc="
+]
+}
