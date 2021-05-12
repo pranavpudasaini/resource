@@ -2,6 +2,12 @@
 OKGREEN='\033[92m'; RESET='\e[0m'
 echo -e "$OKGREEN ++ --------- Installing Dependencies --------- ++ $RESET"
 
+printf '%b\n\n'; echo -e "$OKGREEN Backup Files $RESET"
+mv /etc/apt/sources.list /etc/apt/sources.list.bak
+cp ~/.bashrc ~/.bashrc.bak
+cp ~/.zshrc ~/.zshrc.bak
+cp ~/.bash_profile ~/.bash_profile.bak
+
 printf '%b\n\n'; echo -e "$OKGREEN Step1 : Adding Kali Repo $RESET"
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
