@@ -17,19 +17,19 @@ apt install /tmp/kali-archive-keyring_2020.2_all.deb -y
 
 # ----------------------------------------------------------------------------------------------------------------------------------------- #
 printf '%b\n\n'; echo -e "$OKGREEN Step2 : Repo update + Installing Package $RESET"
-apt-get update -y; DEBIAN_FRONTEND=noninteractive apt install -y libc6-dev; clear;
+apt-get update -y; #DEBIAN_FRONTEND=noninteractive apt install -y libc6-dev; clear;
 apt-get install -y npm git python-pip git parallel jq expect libpq-dev python3-dev nmap build-essential curl wget apache2 \
 chromium zip; apt install python3 python3-pip -y;
 service apache2 start; 
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && python get-pip.py;
-pip install --upgrade pip; pip3 install --upgrade pip
+pip install --upgrade pip; pip3 install --upgrade pip;
 
 printf '%b\n\n'; echo -e "$OKGREEN Step3 : Clone resource Repo + Setup Go $RESET"
 cd /root; git clone https://missme3f@github.com/missme3f/resource.git resource; cp /root/resource/bash_profile /root/.bash_profile
 wget https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz; tar xf go1.13.9.linux-amd64.tar.gz; mv go /usr/local/go-1.13; rm go1.13.9.linux-amd64.tar.gz;
 
 export GOPATH=$HOME/go GOROOT=/usr/local/go-1.13 PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-source ~/.bashrc ~/.bash_profile 
+source ~/.bashrc ~/.bash_profile ;
 mkdir /root/go /root/go/bin /root/tools /var/www/html/automate;
 
 # ----------------------------------------------------------------------------------------------------------------------------------------- #
