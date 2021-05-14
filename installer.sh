@@ -9,7 +9,7 @@ cp ~/.zshrc ~/.zshrc.bak
 cp ~/.bash_profile ~/.bash_profile.bak
 
 printf '%b\n\n'; echo -e "$OKGREEN Step1 : Adding Kali Repo $RESET"
-cp /etc/apt/sources.list /etc/apt/sources.list.bak
+cp /etc/apt/sources.list /etc/apt/sources.list.bak; rm /etc/apt/sources.list;
 echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
 echo "deb-src http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
 wget https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2020.2_all.deb -O /tmp/kali-archive-keyring_2020.2_all.deb

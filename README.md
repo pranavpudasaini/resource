@@ -7,7 +7,7 @@ CORS-Scanner, tplmap, smuggler, dsss, arjun, kxss, favfreak, gau, hakcheckurl, d
 ```
 ```bash
 # installer.sh (Kali Linux 2019.4) --> Use this script to installing all dependencies
-chmod +x installer.sh; ./installer.sh 
+cd resource; chmod +x installer.sh; ./installer.sh 
 
 # Reload .bashrc & .bash_profile after finishing installation
 export GOPATH=$HOME/go GOROOT=/usr/local/go-1.13 PATH=$PATH:$GOROOT/bin:$GOPATH/bin
