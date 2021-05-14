@@ -18,8 +18,9 @@ apt install /tmp/kali-archive-keyring_2020.2_all.deb -y
 # ----------------------------------------------------------------------------------------------------------------------------------------- #
 printf '%b\n\n'; echo -e "$OKGREEN Step2 : Repo update + Installing Package $RESET"
 apt-get update -y; DEBIAN_FRONTEND=noninteractive apt install -y libc6-dev;
-apt-get install -y npm git python3 python-pip git python3-pip parallel jq expect libpq-dev python3-dev nmap build-essential curl wget apache2 \
-chromium-browser zip; service apache2 start; 
+apt-get install -y npm git python3 python3-pip python-pip git parallel jq expect libpq-dev python3-dev nmap build-essential curl wget apache2 \
+chromium zip; service apache2 start; 
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && python get-pip.py;
 pip install --upgrade pip; pip3 install --upgrade pip
 
 printf '%b\n\n'; echo -e "$OKGREEN Step3 : Clone resource Repo + Setup Go $RESET"

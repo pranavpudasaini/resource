@@ -6,7 +6,7 @@ cf-check, unfurl, webanalyze, comb, dalfox, ffuf, nuclei, subjack, retire.js, s3
 CORS-Scanner, tplmap, smuggler, dsss, arjun, kxss, favfreak, gau, hakcheckurl, dnsgen, gron
 ```
 ```bash
-# installer.sh --> Use this script to installing all dependencies
+# installer.sh (Kali Linux 2019.4) --> Use this script to installing all dependencies
 chmod +x installer.sh; ./installer.sh 
 
 # Reload .bashrc & .bash_profile after finishing installation
