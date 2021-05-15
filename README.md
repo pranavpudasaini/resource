@@ -210,7 +210,7 @@ Todo
 |-------------------|-------------------|---------------------------------------------------------------------|
 | **Army-Knife/SCAN**   | [jaeles](https://github.com/jaeles-project/jaeles)    | The Swiss Army knife for automated Web Application Testing  |
 | **Fetch/PROBE**       | [hakcheckurl](https://github.com/hakluke/hakcheckurl) | Takes a list of URLs and returns their HTTP response codes  |
-| **Fetch/PROBE**       | [httpx](https://github.com/projectdiscovery/httpx) (main)  | Fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library |
+| **Fetch/PROBE**       | [httpx](https://github.com/projectdiscovery/httpx)   | Fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library |
 | **Fetch/PATH**        | [meg](https://github.com/tomnomnom/meg)               | Fetch many paths for many hosts - without killing the hosts   |
 | **Recon/CF**          | [cf-check](https://github.com/dwisiswant0/cf-check)   | Cloudflare Checker written in Go  |
 | **Recon/CRAWL**       | [gospider](https://github.com/jaeles-project/gospider)| Gospider - Fast web spider written in Go                           |
