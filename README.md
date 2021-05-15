@@ -2,14 +2,14 @@
 ```bash
 # Dependencies --> go binaries :: https://github.com/missme3f/bin
 sudomy(bash), comb(go), cf-check(go), CORS-Scanner(go), dalfox(go), dnsprobe(go), ffuf(go), 
-gowitness(go), gron(go), gau(go), gf(go), gospider(go), httpx(go), hakcheckurl(go), naabu(go), 
-nuclei(go), meg(go), subjack(go), s3enum(go), secretz(go), unfurl(go), webanalyze(go), kxss(go),   
+gowitness(go), gron(go), gau(go), gf(go), gospider(go), httpx(go), naabu(go), nuclei(go), 
+meg(go), subjack(go), s3enum(go), secretz(go), unfurl(go), webanalyze(go), kxss(go),   
 arjun(py), dsss(py), dnsgen(py), favfreak(py), tplmap(py), js-beautify(py), smuggler(py), linkfinder(py), 
 wscat(npm), retire.js(npm)
 
 # Add ons
 apkurlgrep(go), clickjacking-poc(go), fdns(go), gitleaks(go), go-dork(go), gobuster(go), httprobe(go),
-metabigor(go), qsreplace(go)
+hakcheckurl(go), metabigor(go), qsreplace(go)
 ```
 ```bash
 # installer.sh (Kali Linux 2019.4) --> Use this script to installing all dependencies
@@ -209,15 +209,15 @@ Todo
 | Type              | Tool              | Description                                                         |
 |-------------------|-------------------|---------------------------------------------------------------------|
 | **Army-Knife/SCAN**   | [jaeles](https://github.com/jaeles-project/jaeles)    | The Swiss Army knife for automated Web Application Testing  |
-| **Fetch/PROBE**       | [hakcheckurl](https://github.com/hakluke/hakcheckurl) | Takes a list of URLs and returns their HTTP response codes  |
-| **Fetch/PROBE**       | [httpx](https://github.com/projectdiscovery/httpx)   | Fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library |
-| **Fetch/PATH**        | [meg](https://github.com/tomnomnom/meg)               | Fetch many paths for many hosts - without killing the hosts   |
-| **Recon/CF**          | [cf-check](https://github.com/dwisiswant0/cf-check)   | Cloudflare Checker written in Go  |
-| **Recon/CRAWL**       | [gospider](https://github.com/jaeles-project/gospider)| Gospider - Fast web spider written in Go                           |
-| **Recon/DOMAIN**      | [sudomy](https://github.com/Screetsec/Sudomy)         | Sudomy is a subdomain enumeration tool to collect subdomains and analyzing domains performing automated reconnaissance (recon) for bug hunting / pentesting                          |
-| **Recon/DNS**         | [dnsprobe](https://github.com/projectdiscovery/dnsprobe)| DNSProb is a tool built on top of retryabledns that allows you to perform multiple dns queries of your choice with a list of user supplied resolvers.   |
+| **Fetch/PROBE**       | [hakcheckurl](https://github.com/hakluke/hakcheckurl) (main) | Takes a list of URLs and returns their HTTP response codes  |
+| **Fetch/PROBE**       | [httpx](https://github.com/projectdiscovery/httpx) (main)  | Fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library |
+| **Fetch/PATH**        | [meg](https://github.com/tomnomnom/meg) (main)        | Fetch many paths for many hosts - without killing the hosts   |
+| **Recon/CF**          | [cf-check](https://github.com/dwisiswant0/cf-check) (main)  | Cloudflare Checker written in Go  |
+| **Recon/CRAWL**       | [gospider](https://github.com/jaeles-project/gospider) (main) | Gospider - Fast web spider written in Go                           |
+| **Recon/DOMAIN**      | [sudomy](https://github.com/Screetsec/Sudomy) (main)  | Sudomy is a subdomain enumeration tool to collect subdomains and analyzing domains performing automated reconnaissance (recon) for bug hunting / pentesting                          |
+| **Recon/DNS**         | [dnsprobe](https://github.com/projectdiscovery/dnsprobe) (main) | DNSProb is a tool built on top of retryabledns that allows you to perform multiple dns queries of your choice with a list of user supplied resolvers.   |
 | **Recon/DNS**         | [hakrevdns](https://github.com/hakluke/hakrevdns)     | Small, fast tool for performing reverse DNS lookups en masse. |
-| **Recon/DNS**         | [shuffledns](https://github.com/projectdiscovery/shuffledns)    | shuffleDNS is a wrapper around massdns written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support. |
+| **Recon/DNS**         | [shuffledns](https://github.com/projectdiscovery/shuffledns) (addons)   | shuffleDNS is a wrapper around massdns written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support. |
 | **Recon/DNS**         | [altdns](https://github.com/infosec-au/altdns)        | Generates permutations, alterations and mutations of subdomains and then resolves them |
 | **Recon/DNS**         | [dnsgen](https://github.com/ProjectAnte/dnsgen)        | Generates combination of domain names from the provided input. |
 | **Recon/FAVICON**     | [FavFreak](https://github.com/devanshbatham/FavFreak) | Making Favicon.ico based Recon Great again !  |
