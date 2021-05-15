@@ -34,8 +34,8 @@ source ~/.bashrc ~/.bash_profile ;
 mkdir /root/go /root/go/bin /root/tools /var/www/html/automate;
 
 # ----------------------------------------------------------------------------------------------------------------------------------------- #
-# binaries tool
-printf '%b\n\n'; echo -e "$OKGREEN Step4 : Copying Go Binary Tools $RESET"
+# Go binaries x64
+printf '%b\n\n'; echo -e "$OKGREEN Step4 : Copying Go Binary (x64) Tools $RESET"
 git clone https://github.com/missme3f/bin.git bin; cp /root/bin/* /root/go/bin
 
 # sudomy
@@ -54,14 +54,19 @@ wget https://raw.githubusercontent.com/tomnomnom/gf/master/gf-completion.bash
 source gf-completion.bash; rm gf-completion.bash;
 cp -r /root/resource/gf ~/.gf
 
+# httpx
+wget https://github.com/projectdiscovery/httpx/releases/download/v0.0.6/httpx_0.0.6_linux_386.tar.gz
+tar -xvf httpx_0.0.6_linux_386.tar.gz; mv httpx /usr/bin/httpx
+
+
+## Python tools
+printf '%b\n\n'; echo -e "$OKGREEN Installing Python tools $RESET"
+# -------------------------------------------------------------- #
+
 # linkfinder
 git clone https://github.com/GerbenJavado/LinkFinder.git linkfinder
 pip3 install -r ./linkfinder/requirements.txt; 
 echo "alias linkfinder=\"python3 /root/tools/linkfinder/linkfinder.py\"" >> /root/.bashrc
-
-# httpx
-wget https://github.com/projectdiscovery/httpx/releases/download/v0.0.6/httpx_0.0.6_linux_386.tar.gz
-tar -xvf httpx_0.0.6_linux_386.tar.gz; mv httpx /usr/bin/httpx
 
 # FavFreak
 git clone https://github.com/devanshbatham/FavFreak.git favfreak
@@ -93,14 +98,19 @@ echo "alias tplmap=\"python /root/tools/tplmap/tplmap.py\"" >> /root/.bashrc
 # js-beautify
 pip install jsbeautifier
 
+# dnsgen
+pip3 install dnsgen
+
+
+## NPM tools
+printf '%b\n\n'; echo -e "$OKGREEN Installing NPM tools $RESET"
+# -------------------------------------------------------------- #
 # wscat
 npm install -g wscat
 
 # retire.js
 npm install -g retire
 
-# dnsgen
-pip3 install dnsgen
 
 
 # ----------------------------------------------------------------------------------------------------------------------------------------- #
