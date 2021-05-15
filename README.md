@@ -2,13 +2,14 @@
 ```bash
 # Dependencies --> go binaries :: https://github.com/missme3f/bin
 sudomy(bash), comb(go), cf-check(go), CORS-Scanner(go), dalfox(go), dnsprobe(go), ffuf(go), 
-gowitness(go), gron(go), gau(go), gf(go), gospider(go), httpx(go), hakcheckurl(go),
-naabu, nuclei, meg, subjack, s3enum, secretz, unfurl, webanalyze, kxss,   
-arjun(py), tplmap(py), js-beautify(py), smuggler(py), dsss(py), linkfinder(py), favfreak(py),
-dnsgen(py), wscat(npm), retire.js(npm)
+gowitness(go), gron(go), gau(go), gf(go), gospider(go), httpx(go), hakcheckurl(go), naabu(go), 
+nuclei(go), meg(go), subjack(go), s3enum(go), secretz(go), unfurl(go), webanalyze(go), kxss(go),   
+arjun(py), dsss(py), dnsgen(py), favfreak(py), tplmap(py), js-beautify(py), smuggler(py), linkfinder(py), 
+wscat(npm), retire.js(npm)
 
-# Optionals
-apkurlgrep(go), 
+# Add ons
+apkurlgrep(go), clickjacking-poc(go), fdns(go), gitleaks(go), go-dork(go), gobuster(go), httprobe(go),
+metabigor(go), qsreplace(go)
 ```
 ```bash
 # installer.sh (Kali Linux 2019.4) --> Use this script to installing all dependencies
@@ -209,7 +210,7 @@ Todo
 |-------------------|-------------------|---------------------------------------------------------------------|
 | **Army-Knife/SCAN**   | [jaeles](https://github.com/jaeles-project/jaeles)    | The Swiss Army knife for automated Web Application Testing  |
 | **Fetch/PROBE**       | [hakcheckurl](https://github.com/hakluke/hakcheckurl) | Takes a list of URLs and returns their HTTP response codes  |
-| **Fetch/PROBE**       | [httpx](https://github.com/projectdiscovery/httpx)    | Fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library |
+| **Fetch/PROBE**       | [httpx](https://github.com/projectdiscovery/httpx) (main)  | Fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library |
 | **Fetch/PATH**        | [meg](https://github.com/tomnomnom/meg)               | Fetch many paths for many hosts - without killing the hosts   |
 | **Recon/CF**          | [cf-check](https://github.com/dwisiswant0/cf-check)   | Cloudflare Checker written in Go  |
 | **Recon/CRAWL**       | [gospider](https://github.com/jaeles-project/gospider)| Gospider - Fast web spider written in Go                           |
