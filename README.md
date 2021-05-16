@@ -216,26 +216,26 @@ Todo
 | **Recon/CRAWL**       | [gospider](https://github.com/jaeles-project/gospider) (main) | Gospider - Fast web spider written in Go                           |
 | **Recon/DOMAIN**      | [sudomy](https://github.com/Screetsec/Sudomy) (main)  | Sudomy is a subdomain enumeration tool to collect subdomains and analyzing domains performing automated reconnaissance (recon) for bug hunting / pentesting                          |
 | **Recon/DNS**         | [dnsprobe](https://github.com/projectdiscovery/dnsprobe) (main) | DNSProb is a tool built on top of retryabledns that allows you to perform multiple dns queries of your choice with a list of user supplied resolvers.   |
-| **Recon/DNS**         | [hakrevdns](https://github.com/hakluke/hakrevdns)     | Small, fast tool for performing reverse DNS lookups en masse. |
+| **Recon/DNS**         | [hakrevdns](https://github.com/hakluke/hakrevdns) (addons) | Small, fast tool for performing reverse DNS lookups en masse. |
 | **Recon/DNS**         | [shuffledns](https://github.com/projectdiscovery/shuffledns) (addons)   | shuffleDNS is a wrapper around massdns written in go that allows you to enumerate valid subdomains using active bruteforce as well as resolve subdomains with wildcard handling and easy input-output support. |
-| **Recon/DNS**         | [altdns](https://github.com/infosec-au/altdns)        | Generates permutations, alterations and mutations of subdomains and then resolves them |
-| **Recon/DNS**         | [dnsgen](https://github.com/ProjectAnte/dnsgen)        | Generates combination of domain names from the provided input. |
+| **Recon/DNS**         | [altdns](https://github.com/infosec-au/altdns) (addons)    | Generates permutations, alterations and mutations of subdomains and then resolves them |
+| **Recon/DNS**         | [dnsgen](https://github.com/ProjectAnte/dnsgen) (main)     | Generates combination of domain names from the provided input. |
 | **Recon/FAVICON**     | [FavFreak](https://github.com/devanshbatham/FavFreak) | Making Favicon.ico based Recon Great again !  |
-| **Recon/PORT**        | [naabu](https://github.com/projectdiscovery/naabu)    | A fast port scanner written in go with focus on reliability and simplicity.  |
-| **Recon/WEBANLYZE**   | [webanalyze](https://github.com/rverton/webanalyze)   | Port of Wappalyzer (uncovers technologies used on websites) in Go to automate scanning.  |
-| **Recon/WVS**         | [nuclei](https://github.com/projectdiscovery/nuclei)  | Nuclei is a fast tool for configurable targeted scanning based on templates offering massive extensibility and ease of use.  |
-| **Recon/URLS**        | [gau](https://github.com/lc/gau)                      | Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.  |
-| **Scanner/FUZZ**      | [ffuf](https://github.com/ffuf/ffuf)                  |  Fast web fuzzer written in Go|
-| **Scanner/FUZZ**      | [Arjun](https://github.com/s0md3v/Arjun)              | HTTP parameter discovery suite. | 
-| **Scanner/TKOVER**    | [subjack](https://github.com/haccer/subjack)          | Subdomain Takeover tool written in Go |
-| **Scanner/CORS**      | [CORS-Scanner ](https://github.com/Tanmay-N/CORS-Scanner)  | CORS-Scanner is written in go, designed to discover CORS misconfigurations vulnerabilities of web application. |
-| **Scanner/DESYNC**    | [smuggler](https://github.com/defparam/smuggler)      | An HTTP Request Smuggling / Desync testing tool written in Python 3 |
-| **Scanner/SSTI**      | [tplmap](https://github.com/epinna/tplmap)            | Server-Side Template Injection and Code Injection Detection and Exploitation Tool  |
-| **Scanner/SSRF**      | [SSRFmap](https://github.com/swisskyrepo/SSRFmap)     | Automatic SSRF fuzzer and exploitation tool |
-| **Scanner/SQLI**      | [DSSS](https://github.com/stamparm/DSSS)              | Damn Small SQLi Scanner  |
+| **Recon/PORT**        | [naabu](https://github.com/projectdiscovery/naabu) (main)   | A fast port scanner written in go with focus on reliability and simplicity.  |
+| **Recon/WEBANLYZE**   | [webanalyze](https://github.com/rverton/webanalyze) (main)  | Port of Wappalyzer (uncovers technologies used on websites) in Go to automate scanning.  |
+| **Recon/WVS**         | [nuclei](https://github.com/projectdiscovery/nuclei) (main) | Nuclei is a fast tool for configurable targeted scanning based on templates offering massive extensibility and ease of use.  |
+| **Recon/URLS**        | [gau](https://github.com/lc/gau) (main)               | Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.  |
+| **Scanner/FUZZ**      | [ffuf](https://github.com/ffuf/ffuf) (main)           |  Fast web fuzzer written in Go|
+| **Scanner/FUZZ**      | [Arjun](https://github.com/s0md3v/Arjun) (main)       | HTTP parameter discovery suite. | 
+| **Scanner/TKOVER**    | [subjack](https://github.com/haccer/subjack) (main)   | Subdomain Takeover tool written in Go |
+| **Scanner/CORS**      | [CORS-Scanner ](https://github.com/Tanmay-N/CORS-Scanner) (main) | CORS-Scanner is written in go, designed to discover CORS misconfigurations vulnerabilities of web application. |
+| **Scanner/DESYNC**    | [smuggler](https://github.com/defparam/smuggler) (main)     | An HTTP Request Smuggling / Desync testing tool written in Python 3 |
+| **Scanner/SSTI**      | [tplmap](https://github.com/epinna/tplmap) (main)           | Server-Side Template Injection and Code Injection Detection and Exploitation Tool  |
+| **Scanner/SSRF**      | [SSRFmap](https://github.com/swisskyrepo/SSRFmap) (addons)  | Automatic SSRF fuzzer and exploitation tool |
+| **Scanner/SQLI**      | [DSSS](https://github.com/stamparm/DSSS) (main)             | Damn Small SQLi Scanner  |
 | **Scanner/SQLI**      | [Atlas](https://github.com/m4ll0k/Atlas)              | Quick SQLMap Tamper Suggester  |
 | **Scanner/SQL**       | [sqlmap](https://github.com/sqlmapproject/sqlmap)     | Automatic SQL injection and database takeover tool |
-| **Scanner/SCA**       | [retire.js ](https://github.com/retirejs/retire.js/)  | Scanner detecting the use of JavaScript libraries with known vulnerabilities  |
+| **Scanner/SCA**       | [retire.js ](https://github.com/retirejs/retire.js/) (main) | Scanner detecting the use of JavaScript libraries with known vulnerabilities  |
 | **Scanner/S3**        | [S3Scanner](https://github.com/sa7mon/S3Scanner)      | Scan for open AWS S3 buckets and dump the contents |
 | **Scanner/XSS**       | [dalfox](https://github.com/hahwul/dalfox)            | DalFox(Finder Of XSS) / Parameter Analysis and XSS Scanning tool based on golang |
 | **Scanner/XSS**       | [kxss](https://github.com/tomnomnom/hacks/tree/master/kxss)    | XSS Reflection scanner |
