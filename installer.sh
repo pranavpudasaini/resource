@@ -12,10 +12,10 @@ pip install --upgrade pip; pip3 install --upgrade pip;
 
 printf '%b\n\n'; echo -e "$OKGREEN Step3 : Clone resource Repo + Setup Go $RESET"
 cd /root; git clone https://github.com/pranavpudasaini/resource.git resource; cp /root/resource/bash_profile /root/.bash_profile
-wget https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz; tar xf go1.13.9.linux-amd64.tar.gz; mv go /usr/local/go-1.13; rm go1.13.9.linux-amd64.tar.gz;
+wget https://dl.google.com/go/go1.17.9.linux-amd64.tar.gz; tar xf go1.17.9.linux-amd64.tar.gz; mv go /usr/local/go-1.17; rm go1.17.9.linux-amd64.tar.gz;
 # wget https://dl.google.com/go/go1.13.6.linux-386.tar.gz; tar xf go1.13.6.linux-386.tar.gz; mv go /usr/local/go-1.13; rm go1.13.6.linux-386.tar.gz;
 
-export GOPATH=$HOME/go GOROOT=/usr/local/go-1.13 PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GOPATH=$HOME/go GOROOT=/usr/local/go-1.17 PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 source ~/.bashrc ~/.bash_profile ;
 mkdir /root/go /root/go/bin /root/tools /var/www/html/automate;
 
