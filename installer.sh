@@ -11,7 +11,7 @@ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && python get-pi
 pip install --upgrade pip; pip3 install --upgrade pip;
 
 printf '%b\n\n'; echo -e "$OKGREEN Step3 : Clone resource Repo + Setup Go $RESET"
-cd /root; git clone https://missme3f@github.com/missme3f/resource.git resource; cp /root/resource/bash_profile /root/.bash_profile
+cd /root; git clone https://github.com/pranavpudasaini/resource.git resource; cp /root/resource/bash_profile /root/.bash_profile
 wget https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz; tar xf go1.13.9.linux-amd64.tar.gz; mv go /usr/local/go-1.13; rm go1.13.9.linux-amd64.tar.gz;
 # wget https://dl.google.com/go/go1.13.6.linux-386.tar.gz; tar xf go1.13.6.linux-386.tar.gz; mv go /usr/local/go-1.13; rm go1.13.6.linux-386.tar.gz;
 
